@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <title>Post</title>
+</head>
+<body>
+    {{> "nav-bar"}}
+    {{#post}}
+    <article class="{{post_class}}">
+    <header class="post-header">
+        <h1 class="post-title">{{title}}</h1>
+        <section class="post-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="DD MMMM YYYY"}}
+        </time> 
+        {{tags prefix=" on "}}
+        </section>  
+    </header>
+    <hr>
+    <section class="post-content">
+        {{content}}
+    </section>     
+    </article>
+    {{/post}}   
+</body>
+</html>

@@ -1,0 +1,15 @@
+body{
+    background: #fafafa;
+}
+article{
+    background: #fff;
+    max-width: 800px;
+    min-width: 200px;
+    margin: 100px auto;
+    padding: 40px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.post-content img{
+    width: 100%;
+}
