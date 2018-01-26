@@ -1,5 +1,51 @@
 .container{
     max-width: 800px;
     min-width: 200px;
-    margin: 100px auto;
 }
+.index-title{
+    text-align: center;
+}
+.index-description{
+    text-align: center;
+    font-weight: 200;
+}
+.post-header{
+    display: inline-block;
+    font-size: 16px;
+}
+.post-header h2{
+    font-weight: 400;
+}
+.post-meta {
+    float: right;
+    line-height: 70px;
+}
+
+nav.pagination{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px){
+    .container{
+        padding: 0 20px;
+    }
+    .post-header{
+        font-size: 0.85rem;
+        display: block;
+    }
+    .post-header h2{
+        font-size: 18px;
+        margin: 10px;
+    }
+    .post-meta{
+        font-size: 12px;
+        display: block;
+        float: unset;
+        line-height: 14px;
+        margin-left: 20px;
+        color: #666;
+    }
+}   

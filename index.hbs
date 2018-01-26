@@ -1,44 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <title>Index</title>
-    
-    {{ghost_head}}
-</head>
+{{!< default}} 
+<link rel="stylesheet" href="/assets/css/index.css">
 
-<body>
-    {{> "nav-bar"}}
+<header>
+    <h1 class="index-title">{{@blog.title}}</h1>
+    <h2 class="index-description"><i>{{@blog.description}}</i></h2>
+</header>
 
-    <div class="container">
-        <header>
-            <h1 class="page-title">{{@blog.title}}</h1>
-            <h2 class="page-description"><i>{{@blog.description}}</i></h2>
-        </header>
-        <hr>
-        <main role="main">
-            <!-- This is the post loop - each post will be output using this markup -->
-            {{#foreach posts}}
-            <article class="{{post_class}}">
-                <header class="post-header">
-                    <h2>
-                        <a href="{{url}}">{{title}}</a>
-                    </h2>
-                </header>
-                <footer class="post-meta">
-                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                </footer>
-            </article>
-            {{/foreach}}
-        </main>
-        <!-- Previous/next page links - displayed on every page -->
-        {{pagination}}
-    </div>
-    {{ghost_foot}}
-</body>
-
-</html>
+<hr>
+<main role="main">
+    <!-- This is the post loop - each post will be output using this markup -->
+    {{#foreach posts}}
+    <article class="{{post_class}}">
+        <div class="post-header">
+            <h2>
+                <a href="{{url}}">{{title}}</a>
+            </h2>
+        </div>
+        <div class="post-meta">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+        </div>
+    </article>
+    {{/foreach}}
+</main>
+<!-- Previous/next page links - displayed on every page -->
+{{pagination}}

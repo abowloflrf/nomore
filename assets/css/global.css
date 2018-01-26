@@ -1,18 +1,35 @@
 body {
     margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "思源黑体 CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+}
+code {
+    font-family: "Fira Code", Consolas, Menlo, "Courier New", Courier, monospace;
+    font-size: 13px;
 }
 a {
     text-decoration: none;
     color: black;
 }
 /* 正文如下 */
-nav {
+nav.top-navbar {
     background: #fff;
     height: 60px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
 }
-nav p {
+nav.top-navbar p {
     color: black;
     padding: 0;
     margin: 0 0 0 20px;
     line-height: 60px;
+}
+
+nav.top-navbar .nav-logo {
+    height: 40px;
+    margin: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40px;
 }
