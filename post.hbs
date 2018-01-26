@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+{{ghost_head}}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assets/css/post.css">
     <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    <script src="/assets/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Post</title>
+    
+    {{ghost_head}}
 </head>
 <body>
     {{> "nav-bar"}}
@@ -27,5 +33,6 @@
     </section>     
     </article>
     {{/post}}   
+    {{ghost_foot}}
 </body>
 </html>
