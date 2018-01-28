@@ -1,26 +1,27 @@
 {{!< default}} 
-<link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    <link rel="stylesheet" href="/assets/css/zoom.css">
+    <script src="/assets/js/zoom.min.js"></script>
+    <script src="/assets/js/transition.js"></script>
+    <script src="/assets/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script> {{#post}}
+    <article class="{{post_class}}">
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                    {{date format="MMMM DD, YYYY"}}
+                </time>
+                {{tags separator=""}}
+            </section>
+        </header>
 
-<link rel="stylesheet" href="/assets/css/atom-one-light.css">
-<script src="/assets/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+        <hr class="post-hr">
 
-{{#post}}
-<article class="{{post_class}}">
-<header class="post-header">
-    <h1 class="post-title">{{title}}</h1>
-    <section class="post-meta">
-    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-        {{date format="DD MMMM YYYY"}}
-    </time> 
-    {{tags prefix=" on "}}
-    </section>  
-</header>
-<hr>
+        <section class="post-content">
+            {{content}}
+        </section>
 
-<section class="post-content">
-    {{content}}
-</section>
-
-</article>
-{{/post}}   
+    </article>
+    {{/post}}

@@ -20,6 +20,10 @@
     float: right;
     line-height: 70px;
 }
+.post-meta time{
+    font-size: 14px;
+    color: #9EABB3;
+}
 
 nav.pagination{
     margin-top: 20px;

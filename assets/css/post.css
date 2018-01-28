@@ -1,7 +1,7 @@
-body{
+body {
     background: #fafafa;
 }
-article{
+article {
     background: #fff;
     max-width: 800px;
     min-width: 200px;
@@ -10,21 +10,115 @@ article{
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
     border-radius: 4px;
 }
-.post-content img{
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1em;
+}
+table {
     width: 100%;
-
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+table thead th {
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+table tbody + tbody {
+    border-top: 2px solid #dee2e6;
 }
 
-.post-content pre code {
+.post-title {
+    font-size: 48px;
+    font-weight: 400;
+}
+.post-meta time {
+    margin-right: 10px;
+}
+.post-meta a {
+    font-size: 14px;
+    color: #9eabb3;
+    border: 1px solid #9eabb3;
+    border-radius: 3px;
+    padding: 0px 4px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+.post-hr {
+    margin: 50px 50px;
+    border: none;
+    height: 2px;
+    border-top: 1px solid #c9d3df;
+}
+.post-content img {
+    width: 100%;
+}
+.post-content hr {
+    margin: 50px 50px;
+    border: none;
+    height: 2px;
+    border-top: 1px solid #c9d3df;
+}
+.post-content code {
+    background: #fafafa;
+    padding: 1px 3px;
+    margin: 0px 2px;
+    border-radius: 2px;
+    border: 1px solid #8393a7;
+    vertical-align: 15%;
+}
+
+.post-content pre > code {
+    border: none;
+    background: #fafafa;
     padding: 8px 10px;
     line-height: 1.2rem;
 }
 
-@media (max-width: 600px){
-    .container{
+.post-content blockquote {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 4px solid #c9d3df;
+    background: #ebeff3;
+    color: rgba(0, 0, 0, 0.6);
+}
+.post-content blockquote p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
         padding: 0 20px;
     }
-    article{
+    article {
         padding: 20px;
+    }
+    .post-title {
+        font-size: 28px;
+    }
+    .post-meta time {
+        font-size: 14px;
+    }
+    .post-meta a {
+        font-size: 12px;
     }
 }
