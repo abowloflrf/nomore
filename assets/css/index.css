@@ -13,6 +13,14 @@
     color: #9EABB3;
     font-weight: 400;
 }
+.index-tag{
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+}
+.index-hash{
+    color: #9EABB3;
+}
 .index-hr {
     margin: 50px 50px;
     border: none;
@@ -45,6 +53,9 @@ nav.pagination{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+}
+.page-number{
+    margin:0px 20px;
 }
 
 
