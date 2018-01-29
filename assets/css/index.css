@@ -4,25 +4,41 @@
 }
 .index-title{
     text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px rgba(0, 0 , 0, 0.1);
 }
 .index-description{
     text-align: center;
-    font-weight: 200;
+    color: #9EABB3;
+    font-weight: 400;
+}
+.index-hr {
+    margin: 50px 50px;
+    border: none;
+    height: 2px;
+    border-top: 1px solid #c9d3df;
+}
+article.post{
+    height: 60px;
 }
 .post-header{
     display: inline-block;
-    font-size: 16px;
 }
 .post-header h2{
+    font-size: 26px;
     font-weight: 400;
+    margin: 0px;
+    line-height: 60px;
 }
 .post-meta {
     float: right;
-    line-height: 70px;
+    vertical-align: bottom;
 }
 .post-meta time{
     font-size: 14px;
     color: #9EABB3;
+    line-height: 60px;
 }
 
 nav.pagination{
@@ -36,20 +52,34 @@ nav.pagination{
     .container{
         padding: 0 20px;
     }
+    .index-title{
+        font-size: 40px;
+        margin: 20px 0px 10px 0px;
+    }
+    .index-description{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .index-hr{
+        margin: 30px 20px;
+    }
+    article.post{
+        display: inline;
+    }
     .post-header{
         font-size: 0.85rem;
         display: block;
     }
     .post-header h2{
-        font-size: 18px;
-        margin: 10px;
+        font-size: 24px;
+        line-height: 40px;
+        margin: 0px;
     }
     .post-meta{
+        float: none;
+    }
+    .post-meta time{
         font-size: 12px;
-        display: block;
-        float: unset;
-        line-height: 14px;
-        margin-left: 20px;
-        color: #666;
+        line-height: 20px;
     }
 }   
