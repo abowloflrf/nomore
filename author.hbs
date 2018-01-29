@@ -1,0 +1,26 @@
+{{!< default}} 
+<link rel="stylesheet" href="/assets/css/index.css">
+<header>
+    {{#author}}
+        <h1 class="index-tag"><span class="index-hash">by</span> {{name}}</h1>
+    {{/author}}
+</header>
+
+<hr class="index-hr">
+<main role="main">
+    <!-- This is the post loop - each post will be output using this markup -->
+    {{#foreach posts}}
+    <article class="{{post_class}}">
+        <div class="post-header">
+            <h2>
+                <a href="{{url}}">{{title}}</a>
+            </h2>
+        </div>
+        <div class="post-meta">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM DD, YYYY"}}</time>
+        </div>
+    </article>
+    {{/foreach}}
+</main>
+<!-- Previous/next page links - displayed on every page -->
+{{pagination}}

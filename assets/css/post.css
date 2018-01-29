@@ -75,10 +75,16 @@ table tbody + tbody {
     height: 2px;
     border-top: 1px solid #c9d3df;
 }
+.post-content p{
+    line-height: 1.8rem;
+}
+.post-content li{
+    line-height: 1.8rem;
+}
 .post-content code {
     background: #fafafa;
     padding: 1px 3px;
-    margin: 0px 2px;
+    margin: 0px 4px;
     border-radius: 2px;
     border: 1px solid #9EABB3;
     vertical-align: 15%;
