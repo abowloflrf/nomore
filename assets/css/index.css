@@ -64,7 +64,7 @@ nav.pagination{
         padding: 0 20px;
     }
     .index-title{
-        font-size: 40px;
+        font-size: 36px;
         margin: 20px 0px 10px 0px;
     }
     .index-description{
@@ -82,15 +82,16 @@ nav.pagination{
         display: block;
     }
     .post-header h2{
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 28px;
         margin: 0px;
     }
     .post-meta{
         float: none;
+        margin-bottom: 15px;
     }
     .post-meta time{
         font-size: 12px;
-        line-height: 20px;
+        line-height: 18px;
     }
 }   

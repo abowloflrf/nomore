@@ -9,7 +9,7 @@ code {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #374355;
 }
 /* 正文如下 */
 nav.top-navbar {
@@ -40,7 +40,6 @@ nav.top-navbar .nav-logo {
     display: flex;
     margin: 0px;
     padding: 10px;
-    overflow: hidden;
 }
 .nav-list li {
     display: block;

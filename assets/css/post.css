@@ -69,6 +69,15 @@ table tbody + tbody {
 .post-content img {
     width: 100%;
 }
+.post-content mark{
+    color: #282D4F;
+    background-color: #7CDFFF;
+}
+.post-content a{
+    color: #737c88;
+    text-decoration: underline;
+    padding: 0px 4px;
+}
 .post-content hr {
     margin: 50px 50px;
     border: none;
@@ -87,7 +96,7 @@ table tbody + tbody {
     margin: 0px 4px;
     border-radius: 2px;
     border: 1px solid #9EABB3;
-    vertical-align: 15%;
+    vertical-align: baseline;
 }
 
 .post-content pre > code {
@@ -113,10 +122,10 @@ table tbody + tbody {
 
 @media (max-width: 600px) {
     .container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
     article {
-        padding: 20px;
+        padding: 15px;
     }
     .post-title {
         font-size: 28px;
