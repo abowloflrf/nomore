@@ -90,20 +90,22 @@ table tbody + tbody {
 .post-content li{
     line-height: 1.8rem;
 }
-.post-content code {
-    background: #fafafa;
-    padding: 1px 3px;
-    margin: 0px 4px;
-    border-radius: 2px;
-    border: 1px solid #9EABB3;
-    vertical-align: baseline;
+.post-content :not(pre)>code{
+    background: #f0f2f1;
+    color: #07a;
+    padding: 1px 5px;
+    margin: 0 4px;
+    border-radius: 3px;
+    vertical-align: middle;
+    text-shadow: 0 1px #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.125);
 }
 
 .post-content pre > code {
     border: none;
-    background: #fafafa;
+    background: rgba(238,238,238,.35);
     padding: 8px 10px;
-    line-height: 1.2rem;
+    line-height: 2;
 }
 
 .post-content blockquote {
