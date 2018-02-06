@@ -1,9 +1,37 @@
-<nav class="top-navbar">
-    {{#if @blog.logo}}
-        <a  class="nav-logo-a" href="{{@blog.url}}"><img class="nav-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
-    {{else}}
-        <a class="nav-logo-a" href="{{@blog.url}}">{{@blog.title}}</a>
-    {{/if}}
-    
-    {{navigation}}
+<nav class="navbar">
+    <div class="navbar-brand">
+        {{#if @blog.logo}}
+        <a class="navbar-item" href="{{@blog.url}}">
+            <img class="nav-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+        </a>
+        {{else}}
+        <a class="navbar-item" href="{{@blog.url}}">{{@blog.title}}</a>
+        {{/if}}
+        <div class="navbar-burger" data-target="nomoreNavbar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="navbar-menu" id="nomoreNavbar">
+        {{navigation}}
+    </div>
 </nav>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all "navbar-burger" elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function () {
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+</script>

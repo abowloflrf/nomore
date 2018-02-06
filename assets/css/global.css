@@ -1,7 +1,8 @@
 body {
     margin: 0;
     color: rgba(0, 0, 0, 0.8);
-    font-family:'Merriweather',Georgia, "思源黑体 CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", Georgia, "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        Helvetica, Arial, sans-serif;
 }
 code {
     font-family: "Fira Code", Consolas, Menlo, "Courier New", Courier, monospace;
@@ -12,72 +13,122 @@ a {
     color: #374355;
 }
 /* 正文如下 */
-nav.top-navbar {
-    display: flex;
-    padding: 0px 40px;
+.navbar {
     background: #fff;
-    height: 60px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
 }
-nav.top-navbar p {
-    color: black;
-    padding: 0;
-    margin: 0 0 0 20px;
-    line-height: 60px;
-}
 
-nav.top-navbar .nav-logo {
+.navbar .nav-logo {
     height: 40px;
-}
-.nav-logo-a {
-    margin: 10px 30px 10px 10px;
-    line-height: 40px;
-    height: 40px;
-    font-size: 28px;
-}
-.nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0px;
-    padding: 10px;
-}
-.nav-list li {
-    display: block;
-    line-height: 40px;
-    margin-right: 20px;
-    text-transform: uppercase;
-}
-.nav-list li a {
-    font-size: 14px;
-    color: #374355;
 }
 
 .container {
     margin: 0 auto;
     padding: 0px 40px;
 }
+.navbar-brand {
+    display: flex;
+    flex-shrink: 0;
+}
+.navbar-burger {
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    position: relative;
+    width: 60px;
+    margin-left: auto;
+}
+.navbar-burger span {
+    background-color: #374355;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, transform, -webkit-transform;
+    transition-timing-function: ease-out;
+    width: 16px;
+}
 
-@media (max-width: 600px) {
-    nav.top-navbar {
-        height: 40px;
-        padding: 0px 20px;
-    }
-    nav.top-navbar .nav-logo {
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 6px);
+}
+
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 1px);
+}
+
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 4px);
+}
+
+.navbar-burger:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.navbar-burger.is-active span:nth-child(1) {
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+}
+
+.navbar-burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+    -webkit-transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
+}
+.navbar-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    padding: 0.5rem 1rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    display: block;
+}
+.navbar-menu {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .navbar .nav-logo {
         height: 24px;
     }
-    .nav-logo-a {
-        margin: 8px 10px 8px 0px;
-        line-height: 24px;
-        font-size: 18px;
+    .navbar-burger {
+        height: 40px;
+        width: 40px;
     }
-    .nav-list {
-        padding: 6px;
+    .navbar-menu.is-active {
+        display: block;
     }
-    .nav-list li {
-        line-height: 28px;
-        margin-right: 12px;
+    .navbar-menu {
+        background-color: white;
+        padding: 0.5rem 0;
     }
-    .nav-list li a {
+    .navbar-item {
         font-size: 14px;
+        line-height: 20px;
+    }
+    .navbar-brand .navbar-item {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        display: flex;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .navbar-menu {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .navbar-item {
+        align-items: center;
+        display: flex;
     }
 }
