@@ -1,7 +1,7 @@
-{{!< default}} 
+{{!< default}}
     <link rel="stylesheet" href="/assets/css/post.css">
     <link rel="stylesheet" href="/assets/css/zoom.css">
-    <script>hljs.initHighlightingOnLoad();</script> {{#post}}
+    {{#post}}
     <article class="{{post_class}}">
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
@@ -21,10 +21,16 @@
 
     </article>
     {{/post}}
+    {{!-- <div id="comment"></div>
+    <script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
     <script>
-        var post_imgs=$(".post-content img")
-        for(var i=post_imgs.length-1;i>=0;i--)
-        {
-            post_imgs[i].setAttribute("data-action","zoom")
-        }
-    </script>
+        new Valine({
+            el: '#comment',
+            verify: false,
+            appId: 'APP_ID',
+            appKey: 'APP_KEY',
+            placeholder: '想说点什么？',
+            avatar: 'mm'
+        });
+    </script> --}}
