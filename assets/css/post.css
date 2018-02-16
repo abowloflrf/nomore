@@ -121,33 +121,38 @@ table tbody + tbody {
 }
 #comment {
     background: #fff;
-    max-width: 820px;
-    min-width: 200px;
     margin: 0px auto 60px auto;
     padding: 30px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
     border-radius: 4px;
+}
+.v .vwrap {
+    border: none;
+}
+.v .veditor {
+    font-size: 1.25rem;
+    min-height: 5rem;
 }
 /* Start of Zoom.js CSS file */
 img[data-action="zoom"] {
     cursor: pointer;
     cursor: -webkit-zoom-in;
     cursor: -moz-zoom-in;
-  }
-  .zoom-img,
-  .zoom-img-wrap {
+}
+.zoom-img,
+.zoom-img-wrap {
     position: relative;
     z-index: 666;
     -webkit-transition: all 300ms;
-         -o-transition: all 300ms;
-            transition: all 300ms;
-  }
-  img.zoom-img {
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+img.zoom-img {
     cursor: pointer;
     cursor: -webkit-zoom-out;
     cursor: -moz-zoom-out;
-  }
-  .zoom-overlay {
+}
+.zoom-overlay {
     z-index: 420;
     background: #fff;
     position: fixed;
@@ -158,18 +163,18 @@ img[data-action="zoom"] {
     pointer-events: none;
     filter: "alpha(opacity=0)";
     opacity: 0;
-    -webkit-transition:      opacity 300ms;
-         -o-transition:      opacity 300ms;
-            transition:      opacity 300ms;
-  }
-  .zoom-overlay-open .zoom-overlay {
+    -webkit-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+.zoom-overlay-open .zoom-overlay {
     filter: "alpha(opacity=100)";
     opacity: 1;
-  }
-  .zoom-overlay-open,
-  .zoom-overlay-transitioning {
+}
+.zoom-overlay-open,
+.zoom-overlay-transitioning {
     cursor: default;
-  }
+}
 /* End of Zoom.js CSS file */
 
 @media (max-width: 600px) {
@@ -187,5 +192,8 @@ img[data-action="zoom"] {
     }
     .post-meta a {
         font-size: 12px;
+    }
+    #comment {
+        padding: 15px;
     }
 }
