@@ -61,9 +61,6 @@ nav.pagination{
 }
 
 @media (max-width: 600px){
-    .container{
-        padding: 0 20px;
-    }
     .index-title{
         font-size: 36px;
         margin: 20px 0px 10px 0px;

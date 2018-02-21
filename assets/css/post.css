@@ -65,7 +65,7 @@ table tbody + tbody {
     border-top: 1px solid #c9d3df;
 }
 .post-content img {
-    width: 100%;
+    max-width: 100%;
 }
 .post-content mark {
     color: #282d4f;
@@ -178,9 +178,6 @@ img.zoom-img {
 /* End of Zoom.js CSS file */
 
 @media (max-width: 600px) {
-    .container {
-        padding: 0 15px;
-    }
     article {
         padding: 15px;
     }

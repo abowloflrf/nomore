@@ -22,7 +22,8 @@ a {
     height: 40px;
 }
 
-.container {
+.container,
+footer {
     margin: 0 auto;
     padding: 0px 40px;
     max-width: 900px;
@@ -93,7 +94,22 @@ a {
 .navbar-menu {
     display: none;
 }
+.footer-hr {
+    margin: 50px 0px 10px 0px;
+    border: none;
+    height: 2px;
+    border-top: 1px solid #c9d3df;
+}
+footer p {
+    font-size: 14px;
+    color: #9eabb3;
+    text-align: center;
+}
 @media screen and (max-width: 600px) {
+    .container,
+    footer {
+        padding: 0 20px;
+    }
     .navbar .nav-logo {
         height: 24px;
     }
