@@ -5,7 +5,7 @@
         "dev": "webpack",
         "prod": "webpack --config webpack.prod.js"
     },
-    "version": "1.2.2",
+    "version": "1.2.3",
     "engines": {
         "ghost": ">=1.2.0"
     },
