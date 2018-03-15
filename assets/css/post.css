@@ -75,6 +75,7 @@ table tbody + tbody {
     color: #737c88;
     text-decoration: underline;
     padding: 0px 4px;
+    word-wrap: break-word;
 }
 .post-content hr {
     margin: 50px 50px;
