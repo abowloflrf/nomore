@@ -99,7 +99,9 @@ table tbody + tbody {
     text-shadow: 0 1px #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
-
+.post-content pre > code::-webkit-scrollbar {
+    display: none;
+}
 .post-content pre > code {
     border: none;
     background: rgba(238, 238, 238, 0.35);
