@@ -67,6 +67,16 @@ table tbody + tbody {
 .post-content img {
     max-width: 100%;
 }
+.post-content figure {
+    margin: 0;
+}
+.post-content figcaption {
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
 .post-content mark {
     color: #282d4f;
     background-color: #7cdfff;
