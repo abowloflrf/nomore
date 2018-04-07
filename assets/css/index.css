@@ -1,95 +1,97 @@
-.index-title{
-    text-align: center;
-    font-size: 48px;
-    font-weight: 400;
-    text-shadow: 1px 1px 6px rgba(0, 0 , 0, 0.1);
+header {
+    margin-top: 40px;
 }
-.index-description{
-    text-align: center;
-    color: #9EABB3;
+.container-index,
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.index-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 20px 0;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+.index-description {
+    font-size: 20px;
+    color: #9eabb3;
     font-weight: 400;
 }
-.index-tag{
-    text-align: center;
+.index-tag {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 32px;
 }
-.index-hash{
-    color: #9EABB3;
+.index-hash {
+    color: #9eabb3;
 }
 .index-hr {
-    margin: 50px 50px;
+    margin: 20px 0px;
     border: none;
     height: 2px;
     border-top: 1px solid #c9d3df;
 }
-article.post{
-    height: 60px;
+article.post {
+    margin-bottom: 20px;
 }
-.post-header{
-    display: inline-block;
+.post-header {
+    position: relative;
+    left: 60px;
 }
-.post-header h2{
-    font-size: 26px;
+.post-header h2 {
+    font-size: 20px;
     font-weight: 400;
     margin: 0px;
-    line-height: 60px;
+    word-break: keep-all;
+}
+.post-header a:hover {
+    text-decoration: underline;
+    text-decoration-color: #9eabb3;
 }
 .post-meta {
-    float: right;
-    vertical-align: bottom;
+    position: absolute;
 }
-.post-meta time{
+.post-meta time {
     font-size: 14px;
-    color: #9EABB3;
-    line-height: 60px;
+    font-weight: 200;
+    color: #9eabb3;
 }
 
-nav.pagination{
+nav.pagination {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
-.page-number{
-    margin:0px 20px;
+.page-number {
+    margin: 0px 20px;
 }
 
-@media (max-width: 800px){
-    .post-header h2{
-        font-size: 20px;
+@media (max-width: 600px) {
+    .index-title {
+        font-size: 28px;
+        margin: 10px 0px;
     }
-}
-
-@media (max-width: 600px){
-    .index-title{
-        font-size: 36px;
-        margin: 20px 0px 10px 0px;
-    }
-    .index-description{
-        font-size: 20px;
+    .index-description {
+        font-size: 18px;
         margin: 0px;
     }
-    .index-hr{
-        margin: 30px 20px;
+    article.post {
+        margin-bottom: 10px;
     }
-    article.post{
-        display: inline;
+    .post-header {
+        position: unset;
     }
-    .post-header{
-        font-size: 0.85rem;
-        display: block;
-    }
-    .post-header h2{
-        font-size: 20px;
-        line-height: 28px;
+    .post-header h2 {
+        font-size: 16px;
+        font-weight: 400;
         margin: 0px;
+        word-break: unset;
     }
-    .post-meta{
+    .post-meta {
+        position: unset;
         float: none;
-        margin-bottom: 15px;
     }
-    .post-meta time{
+    .post-meta time {
         font-size: 12px;
         line-height: 18px;
     }
-}   
+}

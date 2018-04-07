@@ -2,22 +2,39 @@
 <link rel="stylesheet" href="{{asset "css/post.css"}}">
 {{#post}}
 <article class="{{post_class}}">
-    <header class="post-header">
-        <h1 class="post-title">{{title}}</h1>
-        <section class="post-meta">
-            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-                {{date format="MMMM DD, YYYY"}}
-            </time>
-            {{tags separator=""}}
+    {{#if feature_image}}
+        <div class="post-image" style="background-image:url({{img_url feature_image}})">
+            <div class="post-image-header">
+                <div class="post-image-info">
+                    <h1 class="post-image-title">{{title}}</h1>
+                        <section class="post-meta post-image-meta">
+                        <time datetime="{{date format='YYYY-MM-DD'}}">
+                            {{date format="MMMM DD, YYYY"}}
+                        </time>
+                        {{tags separator=""}}
+                    </section>
+                </div>
+            </div>
+        </div>
+    {{else}}
+    <div class="post-container" style="padding-bottom:0">
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                    {{date format="MMMM DD, YYYY"}}
+                </time>
+                {{tags separator=""}}
+            </section>
+        </header>
+    </div>
+    {{/if}}
+    <div class="post-container" style="padding-top:0">
+        <hr class="post-hr">
+        <section class="post-content">
+            {{content}}
         </section>
-    </header>
-
-    <hr class="post-hr">
-
-    <section class="post-content">
-        {{content}}
-    </section>
-
+    </div>
 </article>
 {{/post}}
 {{!-- <div id="comment"></div>

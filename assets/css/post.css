@@ -4,9 +4,8 @@ body {
 article {
     background: #fff;
     margin: 60px auto 40px auto;
-    padding: 40px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
-    border-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 h1 {
     font-size: 2em;
@@ -41,9 +40,55 @@ table thead th {
 table tbody + tbody {
     border-top: 2px solid #dee2e6;
 }
-
+.post-image {
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px 4px 0px 0px;
+    position: relative;
+}
+.post-image-header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 40px;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 30%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+}
+.post-image-info {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 500px;
+    color: #fff;
+    text-shadow: 1px 0 8px rgba(0, 0, 0, 0.7);
+}
+.post-image-title {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: 200;
+    font-size: 28px;
+}
+.post-image-meta time {
+    margin-right: 10px;
+    font-weight: 200;
+}
+.post-image-meta a {
+    color: #dee2e6 !important;
+    border: 1px solid #dee2e6 !important;
+    font-weight: 200;
+}
+.post-container {
+    padding: 40px;
+}
 .post-title {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 400;
 }
 .post-meta time {
@@ -74,7 +119,7 @@ table tbody + tbody {
     font-size: 0.75rem;
     font-style: italic;
     font-weight: 200;
-    color: rgba(0, 0, 0, 0.5);
+    color: #9eabb3;
     margin-left: 10px;
 }
 .post-content mark {
@@ -94,7 +139,7 @@ table tbody + tbody {
     border-top: 1px solid #c9d3df;
 }
 .post-content p {
-    line-height: 1.8rem;
+    line-height: 1.6rem;
 }
 .post-content li {
     line-height: 1.8rem;
@@ -131,6 +176,9 @@ table tbody + tbody {
 }
 .post-content blockquote p {
     margin: 0;
+}
+.post-content iframe{
+    max-width: 100%;
 }
 #comment {
     background: #fff;
@@ -191,14 +239,34 @@ img.zoom-img {
 /* End of Zoom.js CSS file */
 
 @media (max-width: 600px) {
-    article {
+    .post-hr {
+        margin: 20px;
+    }
+    .post-content hr {
+        margin: 20px;
+    }
+    .post-container {
         padding: 15px;
     }
+    .post-image {
+        max-height: 200px;
+    }
+    .post-image-header {
+        padding: 15px;
+    }
+    .post-image-info {
+        max-width: 280px;
+        bottom: 15px;
+        left: 15px;
+    }
+    .post-image-title {
+        font-size: 18px;
+    }
     .post-title {
-        font-size: 28px;
+        font-size: 22px;
     }
     .post-meta time {
-        font-size: 14px;
+        font-size: 12px;
     }
     .post-meta a {
         font-size: 12px;
