@@ -30,7 +30,7 @@
 
 1.  在[Release](https://github.com/abowloflrf/nomore/releases)中下载最新的 zip 主题压缩包
 
-2.  Ghost 后台上床并激活主题：
+2.  Ghost 后台上传并激活主题：
 
 ![](upload.png)
 
