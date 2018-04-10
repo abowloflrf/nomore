@@ -5,7 +5,7 @@ article {
     background: #fff;
     margin: 60px auto 40px auto;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.075);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 4px;
 }
 h1 {
     font-size: 1.75em;
