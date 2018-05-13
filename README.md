@@ -6,7 +6,7 @@
 
 *   移动端优化
 *   中文显示友好
-*   代码高亮（使用 highligh.js 若需要支持更多冷门语言，请 clone 后修改配置重新 build）
+*   代码高亮（使用 Prism.js 若需要支持更多冷门语言，请 clone 后修改配置重新 build）
 *   支持的 Ghost 页面：index,post,tag,author,page
 *   文章页面图片支持点击缩放（使用 zoom.js）
 
@@ -28,7 +28,7 @@
 
 ### Upload Theme 上传并激活主题
 
-1.  在[Release](https://github.com/abowloflrf/nomore/releases)中下载最新的 zip 主题压缩包
+1.  在[Release](https://github.com/abowloflrf/nomore/releases/latest)中下载最新的 zip 主题压缩包
 
 2.  Ghost 后台上传并激活主题：
 
