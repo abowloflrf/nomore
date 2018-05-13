@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{meta_title}}</title>
-    <link rel="stylesheet" href="{{asset "css/global.css"}}"> 
+    <link rel="stylesheet" href="{{asset "build/app.css"}}"> 
     {{ghost_head}}
 </head>
 
@@ -17,15 +17,6 @@
         {{> "footer"}}
     </div>
     <script src="{{asset "build/app.js"}}"></script>
-    <script>
-        //代码高亮
-        hljs.initHighlightingOnLoad();
-        //为post的每张图片添加属性以支持点击放大
-        var post_imgs = $(".post-content img")
-        for (var i = post_imgs.length - 1; i >= 0; i--) {
-            post_imgs[i].setAttribute("data-action", "zoom")
-        }
-    </script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet"> {{ghost_foot}}
 </body>
 

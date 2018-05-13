@@ -1,4 +1,6 @@
-const webpack = require("webpack")
+const webpack = require("webpack");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
     entry: __dirname + "/assets/js/index.js",
     output: {
@@ -9,8 +11,12 @@ module.exports = {
         loaders: [
             {
                 test: /\.scss$|\.css$/,
-                use: ["style-loader", "css-loader", "sass-loader"]
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ["css-loader", "sass-loader"]
+                })
             }
         ]
-    }
-}
+    },
+    plugins: [new ExtractTextPlugin("app.css")]
+};

@@ -85,7 +85,7 @@ table tbody + tbody {
     font-weight: 200;
 }
 .post-container {
-    padding: 40px;
+    padding: 1.5rem;
 }
 .post-title {
     font-size: 36px;
@@ -144,6 +144,7 @@ table tbody + tbody {
 .post-content li {
     line-height: 1.8rem;
 }
+
 .post-content :not(pre) > code {
     background: #f0f2f1;
     color: #07a;
@@ -154,14 +155,13 @@ table tbody + tbody {
     text-shadow: 0 1px #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
-.post-content pre > code::-webkit-scrollbar {
-    display: none;
-}
-.post-content pre > code {
-    border: none;
-    background: rgba(238, 238, 238, 0.35);
-    padding: 8px 10px;
-    line-height: 2;
+.post-content pre {
+    color: #ccc;
+    margin: 1rem -1.5rem;
+    line-height: 1.8;
+    background-color: #282c34;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .post-content blockquote {
@@ -177,7 +177,7 @@ table tbody + tbody {
 .post-content blockquote p {
     margin: 0;
 }
-.post-content iframe{
+.post-content iframe {
     max-width: 100%;
 }
 #comment {
@@ -239,14 +239,26 @@ img.zoom-img {
 /* End of Zoom.js CSS file */
 
 @media (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+    article {
+        border-radius: 0;
+    }
     .post-hr {
         margin: 20px;
     }
     .post-content hr {
         margin: 20px;
     }
-    .post-container {
-        padding: 15px;
+    .post-content pre {
+        font-size: 12px;
+        line-height: 1.4;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .post-content pre::-webkit-scrollbar {
+        display: none;
     }
     .post-image {
         max-height: 200px;
@@ -273,5 +285,6 @@ img.zoom-img {
     }
     #comment {
         padding: 15px;
+        border-radius: 0;
     }
 }
