@@ -13,7 +13,7 @@ module.exports = {
                 test: /\.scss$|\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: ["css-loader", "sass-loader"]
+                    use: ["css-loader"]
                 })
             }
         ]
