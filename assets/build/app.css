@@ -1,12 +1,13 @@
 body {
     margin: 0;
     color: rgba(0, 0, 0, 0.8);
-    font-family: Consolas, "Liberation Mono", "Source Han Sans CN",
-        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-family: Consolas, "Liberation Mono", Menlo, Monaco,
+        "Source Han Sans CN", "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", sans-serif;
     font-size: 14px;
 }
 code {
-    font-family: "Fira Code", Monaco, Consolas, "Ubuntu Mono", monospace;
+    font-family: "Fira Code", Consolas, Monaco, Consolas, monospace;
 }
 a {
     text-decoration: none;
