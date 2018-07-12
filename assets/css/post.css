@@ -146,25 +146,22 @@ table tbody + tbody {
 }
 
 .post-content :not(pre) > code {
-    background: #f0f2f1;
-    color: #07a;
+    background: #ebeef0;
     padding: 1px 5px;
     margin: 0 4px;
     border-radius: 3px;
     vertical-align: middle;
-    text-shadow: 0 1px #fff;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
 .post-content pre {
-    color: #ccc;
-    margin: 1rem -1.5rem;
     line-height: 1.8;
-    background-color: #282c34;
+    background-color: #ebeef0;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+    border-radius: 3px;
 }
 
 .post-content blockquote {
+    font-style: italic;
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 20px;
@@ -189,10 +186,6 @@ table tbody + tbody {
 }
 .v .vwrap {
     border: none;
-}
-.v .veditor {
-    font-size: 1.25rem;
-    min-height: 5rem;
 }
 /* Start of Zoom.js CSS file */
 img[data-action="zoom"] {
@@ -252,8 +245,6 @@ img.zoom-img {
         margin: 20px;
     }
     .post-content pre {
-        font-size: 12px;
-        line-height: 1.4;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
     }
@@ -262,6 +253,7 @@ img.zoom-img {
     }
     .post-image {
         max-height: 200px;
+        border-radius: 0;
     }
     .post-image-header {
         padding: 15px;

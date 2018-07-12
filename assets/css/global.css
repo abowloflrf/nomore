@@ -1,8 +1,8 @@
 body {
     margin: 0;
     color: rgba(0, 0, 0, 0.8);
-    font-family: "Merriweather", Georgia, "Source Han Sans CN", "PingFang SC",
-        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    font-family: Consolas, "Liberation Mono", "Source Han Sans CN",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     font-size: 14px;
 }
 code {
@@ -82,13 +82,12 @@ a {
     transform: translateY(-5px) rotate(-45deg);
 }
 .navbar-item {
-    font-size: 16px;
+    font-size: 20px;
     flex-grow: 0;
     flex-shrink: 0;
     position: relative;
     padding: 0.5rem 1rem;
     line-height: 40px;
-    text-transform: uppercase;
     display: block;
 }
 .navbar-menu {

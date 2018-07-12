@@ -5,11 +5,10 @@ window.$ = window.jQuery = require("jquery");
 import "../css/global.css";
 
 // PrismJS code block syntax highlight congurations
-$("pre").addClass("line-numbers language-");
+$("pre").addClass("language-");
 var Prism = require("prismjs");
-import "../css/prism-tomorrow.css";
-import "../css/prism-line-numbers.css";
-require("prismjs/plugins/line-numbers/prism-line-numbers.js");
+import "../css/prism.css";
+
 //TODO: 这里使用了比较蠢的方法引入语言，之前使用loadLanguages的方法不知为何会引入所有文件导致打包后大小超过600k，待解决
 require("prismjs/components/prism-bash.js");
 require("prismjs/components/prism-c.js");
