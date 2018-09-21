@@ -1,5 +1,10 @@
 <!-- Loop through the navigation items -->
-{{#foreach navigation}}
-<a href="{{url absolute=" true "}}" class="navbar-item nav-{{slug}}{{#if current}} nav-current{{/if}}">{{label}}</a>
-{{/foreach}}
+<ul>
+    {{#foreach navigation}}
+        <li class="navbar-item">
+            <a href="{{url absolute=" true "}}" class="navbar-item nav-{{slug}}{{#if current}} nav-current{{/if}}">{{label}}</a>
+        </li>
+    {{/foreach}}
+</ul>
+
 <!-- End the loop -->

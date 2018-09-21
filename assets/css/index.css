@@ -1,11 +1,6 @@
 header {
     margin-top: 40px;
 }
-.container-index,
-footer {
-    max-width: 720px;
-    margin: 0 auto;
-}
 .index-title {
     font-size: 32px;
     font-weight: 400;

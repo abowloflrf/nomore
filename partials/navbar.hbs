@@ -1,20 +1,8 @@
 <nav class="navbar">
-    <div class="navbar-brand">
-        {{#if @blog.logo}}
-        <a class="navbar-item" href="{{@blog.url}}">
-            <img class="nav-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-        </a>
-        {{else}}
-        <a class="navbar-item" href="{{@blog.url}}">{{@blog.title}}</a>
-        {{/if}}
-        <div class="navbar-burger" data-target="nomoreNavbar">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="container container-width">
+        <div class="navbar-menu" id="nomoreNavbar">
+            {{navigation}}
         </div>
-    </div>
-    <div class="navbar-menu" id="nomoreNavbar">
-        {{navigation}}
     </div>
 </nav>
 <script>

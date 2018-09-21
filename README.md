@@ -1,6 +1,6 @@
 # Ghost 主题 nomore
 
-一个简洁的同时又美观耐看不普通的 Ghost 主题，适合开发者个人博客
+一个简洁的同时又美观耐看不普通的 Ghost 主题
 
 ## Featrue List
 

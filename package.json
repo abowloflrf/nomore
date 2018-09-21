@@ -1,11 +1,16 @@
 {
     "name": "nomore",
-    "description": "A very simple theme for Chinese Ghost users.",
+    "description": "A very simple theme Ghost Blog",
+    "keywords": [
+        "ghost-theme",
+        "simple",
+        "theme"
+    ],
     "scripts": {
         "dev": "webpack",
         "prod": "webpack --config webpack.prod.js"
     },
-    "version": "2.1.4",
+    "version": "2.2.0",
     "engines": {
         "ghost": ">=1.2.0"
     },
