@@ -1,23 +1,24 @@
-const webpack = require("webpack");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const webpack = require("webpack")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
+    mode: "production",
     entry: __dirname + "/assets/js/index.js",
     output: {
         path: __dirname + "/assets/build",
         filename: "app.js"
     },
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.scss$|\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ["css-loader"]
-                })
+                test: /\.css$/,
+                use: [{ loader: MiniCssExtractPlugin.loader }, "css-loader"]
             }
         ]
     },
-    plugins: [new UglifyJsPlugin(), new ExtractTextPlugin("app.css")]
-};
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "app.css"
+        })
+    ]
+}
